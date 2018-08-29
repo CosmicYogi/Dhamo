@@ -10,6 +10,7 @@
 		9408A0BF21366A1000E733FE /* DhamoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9408A0B521366A0F00E733FE /* DhamoFramework.framework */; };
 		9408A0C421366A1000E733FE /* DhamoFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9408A0C321366A1000E733FE /* DhamoFrameworkTests.swift */; };
 		9408A0C621366A1000E733FE /* DhamoFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 9408A0B821366A0F00E733FE /* DhamoFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9408A10A21366B9000E733FE /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9408A10921366B9000E733FE /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		9408A0BE21366A1000E733FE /* DhamoFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DhamoFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9408A0C321366A1000E733FE /* DhamoFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhamoFrameworkTests.swift; sourceTree = "<group>"; };
 		9408A0C521366A1000E733FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9408A10921366B9000E733FE /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				9408A0B821366A0F00E733FE /* DhamoFramework.h */,
+				9408A10921366B9000E733FE /* Game.swift */,
 				9408A0B921366A0F00E733FE /* Info.plist */,
 			);
 			path = DhamoFramework;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					9408A0B421366A0F00E733FE = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					9408A0BD21366A1000E733FE = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9408A10A21366B9000E733FE /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +344,7 @@
 		9408A0CA21366A1000E733FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -355,6 +361,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = miteshsoni.DhamoFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +370,7 @@
 		9408A0CB21366A1000E733FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -387,6 +395,7 @@
 		9408A0CD21366A1000E733FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DhamoFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +413,7 @@
 		9408A0CE21366A1000E733FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DhamoFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

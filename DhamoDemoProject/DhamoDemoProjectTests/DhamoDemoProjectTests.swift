@@ -1,15 +1,15 @@
 //
-//  DhamoFrameworkTests.swift
-//  DhamoFrameworkTests
+//  DhamoDemoProjectTests.swift
+//  DhamoDemoProjectTests
 //
 //  Created by Mitesh Soni on 29/08/18.
 //  Copyright © 2018 Mitesh Soni. All rights reserved.
 //
 
 import XCTest
-@testable import DhamoFramework
+@testable import DhamoDemoProject
 
-class DhamoFrameworkTests: XCTestCase {
+class DhamoDemoProjectTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -33,11 +33,4 @@ class DhamoFrameworkTests: XCTestCase {
         }
     }
     
-    func testLordaLassan() {
-        
-        let a = "a"
-        let b = "a"
-        
-        XCTAssertEqual(a, b)
-    }
 }
