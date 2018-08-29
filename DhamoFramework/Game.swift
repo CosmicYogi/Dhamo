@@ -14,6 +14,9 @@ public class Game{
         print("And I just edited it too")
     }
     
+    public func bangGame(){
+        print("This shit is gonna be awesome")
+    }
     public init() {
     }
 }
